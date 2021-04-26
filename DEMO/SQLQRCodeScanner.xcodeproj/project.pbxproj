@@ -12,6 +12,7 @@
 		C7B89FD326364A6F00B45C9D /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7B89FCC26364A6F00B45C9D /* back@3x.png */; };
 		C7B89FD426364A6F00B45C9D /* SQLCameraScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B89FCF26364A6F00B45C9D /* SQLCameraScanView.m */; };
 		C7B89FD526364A6F00B45C9D /* SQLQRCodeScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B89FD026364A6F00B45C9D /* SQLQRCodeScannerController.m */; };
+		C7B89FDB2636505900B45C9D /* NSBundle+DFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B89FD92636505900B45C9D /* NSBundle+DFBundle.m */; };
 		C7C8CD59263504FA00B62B93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C8CD58263504FA00B62B93 /* AppDelegate.m */; };
 		C7C8CD5C263504FA00B62B93 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C8CD5B263504FA00B62B93 /* SceneDelegate.m */; };
 		C7C8CD5F263504FA00B62B93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C8CD5E263504FA00B62B93 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		C7B89FCE26364A6F00B45C9D /* SQLCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLCustomButton.h; sourceTree = "<group>"; };
 		C7B89FCF26364A6F00B45C9D /* SQLCameraScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLCameraScanView.m; sourceTree = "<group>"; };
 		C7B89FD026364A6F00B45C9D /* SQLQRCodeScannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLQRCodeScannerController.m; sourceTree = "<group>"; };
+		C7B89FD92636505900B45C9D /* NSBundle+DFBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DFBundle.m"; sourceTree = "<group>"; };
+		C7B89FDA2636505900B45C9D /* NSBundle+DFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DFBundle.h"; sourceTree = "<group>"; };
 		C7C8CD54263504FA00B62B93 /* SQLQRCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLQRCodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C8CD57263504FA00B62B93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7C8CD58263504FA00B62B93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,14 +100,16 @@
 		C7B89FC826364A6F00B45C9D /* SQLQRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
-				C7B89FC926364A6F00B45C9D /* SQLCustomButton.m */,
 				C7B89FCA26364A6F00B45C9D /* back@2x.png */,
-				C7B89FCB26364A6F00B45C9D /* SQLCameraScanView.h */,
 				C7B89FCC26364A6F00B45C9D /* back@3x.png */,
-				C7B89FCD26364A6F00B45C9D /* SQLQRCodeScannerController.h */,
-				C7B89FCE26364A6F00B45C9D /* SQLCustomButton.h */,
+				C7B89FCB26364A6F00B45C9D /* SQLCameraScanView.h */,
 				C7B89FCF26364A6F00B45C9D /* SQLCameraScanView.m */,
+				C7B89FCE26364A6F00B45C9D /* SQLCustomButton.h */,
+				C7B89FC926364A6F00B45C9D /* SQLCustomButton.m */,
+				C7B89FCD26364A6F00B45C9D /* SQLQRCodeScannerController.h */,
 				C7B89FD026364A6F00B45C9D /* SQLQRCodeScannerController.m */,
+				C7B89FDA2636505900B45C9D /* NSBundle+DFBundle.h */,
+				C7B89FD92636505900B45C9D /* NSBundle+DFBundle.m */,
 			);
 			path = SQLQRCodeScanner;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B89FDB2636505900B45C9D /* NSBundle+DFBundle.m in Sources */,
 				C7C8CD5F263504FA00B62B93 /* ViewController.m in Sources */,
 				C7C8CD59263504FA00B62B93 /* AppDelegate.m in Sources */,
 				C7B89FD526364A6F00B45C9D /* SQLQRCodeScannerController.m in Sources */,
