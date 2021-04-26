@@ -9,6 +9,7 @@
 #import "SQLQRCodeScannerController.h"
 #import "SQLCameraScanView.h"
 #import "SQLCustomButton.h"
+#import "NSBundle+DFBundle.h"
 
 @interface SQLQRCodeScannerController ()<AVCaptureMetadataOutputObjectsDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate> //遵守AVCaptureMetadataOutputObjectsDelegate协议
 @property ( strong , nonatomic ) AVCaptureDevice * device; //捕获设备，默认后置摄像头
@@ -154,13 +155,14 @@
 
 - (void)addBtns{
     CGFloat kScreen_Width = [UIScreen mainScreen].bounds.size.width;
+    NSBundle *bundle = [NSBundle bundleWithBundleName:@"SQLQRCodeScanner" podName:@"SQLQRCodeScanner"];
     if (self.navigationController) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"相册" style:UIBarButtonItemStyleDone target:self action:@selector(choicePhoto)];
         self.backBtn = [[SQLCustomButton alloc]initWithFrame:(CGRect){0,20,60,44}
                                                   type:SQLCustomButtonLeftImageType
                                              imageSize:CGSizeMake(10, 20) midmargin:5];
         self.backBtn.isShowSelectBackgroudColor = NO;
-        self.backBtn.imageView.image = [UIImage imageNamed:@"back"];
+        self.backBtn.imageView.image = [UIImage imageNamed:@"back" inBundle:bundle compatibleWithTraitCollection:nil];
         self.backBtn.backgroundColor = [UIColor clearColor];
         self.backBtn.titleLabel.text = @"";
         self.backBtn.titleLabel.font = [UIFont systemFontOfSize:17];
@@ -183,7 +185,7 @@
                                                   type:SQLCustomButtonLeftImageType
                                              imageSize:CGSizeMake(10, 20) midmargin:5];
         self.backBtn.isShowSelectBackgroudColor = NO;
-        self.backBtn.imageView.image = [UIImage imageNamed:@"back"];
+        self.backBtn.imageView.image = [UIImage imageNamed:@"back" inBundle:bundle compatibleWithTraitCollection:nil];
         self.backBtn.backgroundColor = [UIColor clearColor];
         self.backBtn.titleLabel.text = @"";
         self.backBtn.titleLabel.font = [UIFont systemFontOfSize:17];
